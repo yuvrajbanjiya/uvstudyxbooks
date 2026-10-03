@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07152d">
+  <meta name="description" content="Class 10 & 11 study resources, books and notes.">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4484474155841016" crossorigin="anonymous"></script>
+  <title>Class Free Book • Study Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Class Free Book home">
+    <img src="assets/logo.png" alt="Class Free Book logo">
+    <div><strong>UVstudyX BOOKS</strong><span>10 • 11 • 12 • JEE • NEET</span></div>
+  </a>
+  <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a><a href="#books">Books</a><a href="#subjects">Subjects</a><a href="#community">Community</a><a href="#about">About</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">📚 STUDY • PRACTICE • PROGRESS</p>
+    <h1>Your study library, <span>beautifully organised.</span></h1>
+    <p class="lead">Find the right book quickly with subject-wise sections and instant search.</p>
+    <div class="actions"><a class="btn primary" href="https://t.me/class11freebook" target="_blank" rel="noopener">Join Telegram</a><a class="btn secondary" href="#books">📚 UVstudyX Books</a></div>
+    <div class="trust-row"><div><b>10–12</b><small>Classes</small></div><div><b>7+</b><small>Subjects</small></div><div><b>JEE</b><small>Prep</small></div><div><b>NEET</b><small>Prep</small></div></div>
+  </div>
+  <div class="hero-logo"><div class="glow"></div><img src="assets/logo.png" alt="Class Free Book"></div>
+</section>
+
+<section id="community" class="community-section" aria-label="Our community channels">
+  <div class="community-card">
+    <div class="community-accent"></div>
+    <div class="community-top">
+      <div>
+        <p class="eyebrow">JOIN UVstudyX COMMUNITY</p>
+        <h2>Stay Connected With Us</h2>
+        <p>Get new books, notes, updates and study resources on your favourite platform.</p>
+      </div>
+    </div>
+    <div class="channel-slider" id="channelSlider">
+      <article class="channel-slide active" data-channel="whatsapp">
+        <div class="channel-icon whatsapp-icon">WA</div>
+        <div class="channel-copy">
+          <h3>Join WhatsApp Channel</h3>
+          <p>Get real-time updates directly on WhatsApp.</p>
+          <a class="channel-btn whatsapp-btn" href="https://whatsapp.com/channel/0029Vb9HMKTJf05TqvWPpc0k" target="_blank" rel="noopener noreferrer">Join Channel ↗</a>
+        </div>
+      </article>
+      <article class="channel-slide" data-channel="telegram" hidden>
+        <div class="channel-icon telegram-icon">✈</div>
+        <div class="channel-copy">
+          <h3>Join Official Telegram</h3>
+          <p>Join us on Telegram for new books and notes.</p>
+          <a class="channel-btn telegram-btn" href="https://t.me/class11freebook" target="_blank" rel="noopener noreferrer">Join Channel ↗</a>
+        </div>
+      </article>
+      <article class="channel-slide" data-channel="youtube" hidden>
+        <div class="channel-icon youtube-icon">▶</div>
+        <div class="channel-copy">
+          <h3>Subscribe on YouTube</h3>
+          <p>Watch useful study videos, tips and tutorials.</p>
+          <a class="channel-btn youtube-btn" href="https://youtube.com/@uvfreebooks?si=YLhawXu9lJpI3pnB" target="_blank" rel="noopener noreferrer">Subscribe Now ↗</a>
+        </div>
+      </article>
+    </div>
+    <div class="channel-controls">
+      <div class="slider-arrows">
+        <button type="button" class="channel-arrow" onclick="changeChannel(-1)" aria-label="Previous channel">‹</button>
+        <button type="button" class="channel-arrow" onclick="changeChannel(1)" aria-label="Next channel">›</button>
+      </div>
+      <button type="button" class="switch-channel" onclick="changeChannel(1)">Next Channel <span>→</span></button>
+    </div>
+  </div>
+</section>
+
+<section id="books" class="section">
+  <div class="section-head"><p class="eyebrow">UVstudyX LIBRARY</p><h2>Books & Study Material</h2><p>Search by book name, class, subject or category.</p>
+    <div class="download-tutorial"><div class="download-tutorial-icon">▶</div><div class="download-tutorial-text"><strong>How to Download Books?</strong><span>Indirect download link se book download karne ka complete video.</span></div><a class="tutorial-btn" href="https://youtube.com/shorts/q_lj9X-nPoo?si=WfCHpAdpeUGY8GJ8" target="_blank" rel="noopener noreferrer">▶ Watch Tutorial</a></div>
+  </div>
+
+  <div class="library-toolbar">
+    <div class="search-wrap"><span>⌕</span><input id="bookSearch" type="search" placeholder="Search books, subjects, classes..." autocomplete="off" oninput="handleSearch(this.value)"><button id="clearSearch" onclick="clearSearch()" aria-label="Clear search">×</button></div>
+    <div class="subject-tabs" id="subjectTabs"><button class="active" data-subject="all" onclick="setSubject('all',this)">All <span id="countAll">0</span></button><button data-subject="Physics" onclick="setSubject('Physics',this)">⚛️ Physics <span> </span></button><button data-subject="Chemistry" onclick="setSubject('Chemistry',this)">🧪 Chemistry <span> </span></button><button data-subject="Biology" onclick="setSubject('Biology',this)">🧬 Biology <span> </span></button><button data-subject="Hindi" onclick="setSubject('Hindi',this)">हिंदी <span> </span></button><button data-subject="English" onclick="setSubject('English',this)">🔤 English <span> </span></button><button data-subject="Mathematics" onclick="setSubject('Mathematics',this)">📐 Maths <span> </span></button></div>
+  </div>
+  <div class="library-meta"><span id="resultText">Loading books…</span><button class="reset-filter" onclick="resetFilters()">Reset filters</button></div>
+  <div id="booksGrid" class="books-grid"></div>
+  <div id="emptyState" class="empty-state" hidden><div>📚</div><h3>No books found</h3><p>Try another keyword or select a different subject.</p></div>
+  <div class="owner-credit">Owner: <a href="https://www.instagram.com/yuvrajbajiya/" target="_blank" rel="noopener noreferrer">@yuvrajbajiya</a></div>
+</section>
+
+<section id="subjects" class="section dark-section"><div class="section-head"><p class="eyebrow">QUICK FILTER</p><h2>Subjects</h2><p>Open a subject to instantly filter the library.</p></div><div class="subject-grid">
+  <button class="subject" onclick="setSubject('Physics')"><span>⚛️</span><b>Physics</b><small>Concepts & practice</small></button>
+  <button class="subject" onclick="setSubject('Chemistry')"><span>🧪</span><b>Chemistry</b><small>NCERT & revision</small></button>
+  <button class="subject" onclick="setSubject('Biology')"><span>🧬</span><b>Biology</b><small>NEET preparation</small></button>
+  <button class="subject" onclick="setSubject('Hindi')"><span>हिं</span><b>Hindi</b><small>Language resources</small></button>
+  <button class="subject" onclick="setSubject('English')"><span>EN</span><b>English</b><small>Language resources</small></button>
+  <button class="subject" onclick="setSubject('Mathematics')"><span>📐</span><b>Mathematics</b><small>Class 10/11 & JEE</small></button>
+</div></section>
+
+<section class="cta"><div><p class="eyebrow">STAY UPDATED</p><h2>New resources, one place.</h2><p>Join Telegram for newly added books and study updates.</p></div><a class="btn primary" href="https://t.me/class11freebook" target="_blank" rel="noopener">Open Telegram ↗</a></section>
+<section id="about" class="section about"><div class="about-box"><img src="assets/logo.png" alt="Logo"><div><p class="eyebrow">UVstudyX Books</p><h2>Class 10 • 11 • 12 • JEE • NEET</h2><p>A clean study-resource library. Use only resources you are authorised to access and share.</p></div></div></section>
+</main>
+<footer><div><strong>UVstudyX BOOKS</strong><span> • Study. Practice. Progress.</span></div><div>© <span id="year"></span> UVstudyX Books</div></footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+<script src="script.js"></script>
+<!-- Telegram welcome popup -->
+<div id="telegramPopup" class="telegram-popup" role="dialog" aria-modal="true" aria-labelledby="telegramPopupTitle" aria-hidden="true">
+  <div class="telegram-popup-backdrop" onclick="closeTelegramPopup()"></div>
+  <div class="telegram-popup-card">
+    <button class="telegram-popup-close" type="button" onclick="closeTelegramPopup()" aria-label="Close popup">×</button>
+    <div class="telegram-popup-art">
+      <div class="telegram-orbit orbit-one"></div>
+      <div class="telegram-orbit orbit-two"></div>
+      <div class="telegram-popup-badge">✈</div>
+      <div class="telegram-popup-title-art">Join Our<br><strong>Telegram</strong><span>Channel</span></div>
+      <div class="telegram-popup-arrow">Stay Updated →</div>
+    </div>
+    <div class="telegram-popup-body">
+      <h2 id="telegramPopupTitle">Join <span>Telegram</span> Channel!</h2>
+      <p>Don't miss any future<br>updates!</p>
+      <a class="telegram-popup-btn" href="https://t.me/addlist/91qjRRssUroxZWRl" target="_blank" rel="noopener noreferrer">✈ <span>Join Channel Now</span> →</a>
+    </div>
+  </div>
+</div>
+
+
+<div id="loginModal" class="modal"><div class="modal-box"><button class="modal-close" onclick="closeLogin()">×</button><div class="admin-lock">🔐</div><h2>Admin Panel</h2><p>Enter admin password to manage books.</p><input id="adminPassword" type="password" placeholder="Admin password" autocomplete="off"><button class="btn primary full" onclick="loginAdmin()">Unlock Admin</button><div id="loginError" class="login-error"></div></div></div>
+<div id="adminModal" class="modal"><div class="admin-panel"><div class="admin-head"><div><p class="eyebrow">ADMIN MODE</p><h2>Book Manager</h2></div><button class="modal-close" onclick="closeAdmin()">×</button></div><button class="add-book-btn" onclick="openBookForm()">＋ Add Book</button><div class="admin-note">Tip: choose the correct subject. Physics books will automatically appear in the Physics section, Chemistry in Chemistry, etc.</div><div id="adminBooks"></div><div id="bookForm" class="book-form" hidden><h3 id="formTitle">Add New Book</h3><input id="bookTitle" placeholder="Book name"><select id="bookSubject"><option value="Physics">Physics</option><option value="Chemistry">Chemistry</option><option value="Biology">Biology</option><option value="Hindi">Hindi</option><option value="English">English</option><option value="Mathematics">Mathematics</option><option value="Other">Other</option></select><input id="bookCategory" placeholder="Category / Class (e.g. Class 11 • NCERT)"><input id="bookImage" placeholder="Direct cover image URL"><input id="bookDownload" placeholder="Authorised download/share link"><div class="form-actions"><button class="btn secondary" onclick="closeBookForm()">Cancel</button><button class="btn primary" onclick="saveBook()">Add Book</button></div></div></div></div>
+</body></html>
